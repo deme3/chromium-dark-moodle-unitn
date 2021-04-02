@@ -1,0 +1,353 @@
+#headerUniTN {
+    background: #212121 !important;
+}
+
+a[href="https://dol.unitn.it/moodle"]::after,
+a[href^="https://webapps.unitn.it/du/it/Persona/"]::after {
+    content: " (warning: white page!)"
+}
+
+a[href^="https://didatticaonline.unitn.it/ateneo/course/view.php?id="]::after {
+    content: " (dark mode enabled)"
+}
+
+#headerUniTN .nav-item .nav-link {
+    color: #AAA !important;
+}
+
+.dropdown-menu {
+    background: #101010 !important;
+    color: #AAA !important;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #AAA !important
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #AAA !important;
+    background-color: #404040 !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #fff !important;
+    background-color: #c01532 !important;
+}
+
+.card,
+#page-enrol-users #filterform,
+.que .history,
+.userprofile .profile_tree section,
+.groupinfobox,
+.well,
+#region-main {
+    background: #212121 !important;
+}
+
+#region-main .card {
+    border-color: #101010 !important;
+}
+
+
+/* Settings */
+
+.form-control,
+.custom-select,
+#fitem_id_interests input[type=text] {
+    background-color: #212121 !important;
+    border: 1px solid #404040 !important;
+    outline: none !important;
+    color: #AAA !important;
+}
+
+.form-control:focus,
+.custom-select:focus {
+    border-color: #101010 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.mform fieldset {
+    border-bottom: 1px solid #404040 !important;
+}
+
+
+/* WYSIWIG */
+
+div.editor_atto_toolbar {
+    background: #404040 !important;
+    border: 1px solid #404040 !important;
+}
+
+.editor_atto_content_wrap,
+.editor_atto+textarea {
+    border: none !important;
+    background: none !important;
+}
+
+div.editor_atto_toolbar div.atto_group {
+    border: 1px solid #101010 !important;
+    border-bottom: 1px solid #101010 !important;
+    background: transparent !important;
+}
+
+div.editor_atto_toolbar button+button {
+    border-left: 1px solid #101010 !important;
+}
+
+div.editor_atto_toolbar button .icon {
+    color: #AAA !important;
+}
+
+.editor_atto_toolbar button {
+    outline: none !important;
+}
+
+.editor_atto_toolbar button:hover {
+    background: #101010 !important;
+}
+
+
+/* Sidebar links */
+
+.list-group-item:not(.active) {
+    background: #212121 !important;
+    color: #AAA;
+    border-width: 1px;
+    border-color: #404040;
+}
+
+.list-group-item:not(.active):hover {
+    background: #101010 !important;
+    color: #AAA !important;
+}
+
+
+/*
+    Areas that are drawn grey
+    Such as the background behind the main section
+    and the background behind the left sidebar
+*/
+
+[data-region="drawer"],
+#region-main-box,
+body,
+html {
+    background: #101010 !important;
+    color: #AAA !important;
+}
+
+
+/* Course section titles */
+
+.sectionname {
+    color: #b10b25 !important;
+}
+
+
+/* Course section separators */
+
+.course-content ul li.section.main {
+    border-bottom: 1px solid #404040 !important;
+}
+
+
+/* navbar 
+(didatticaonline logo + user)
+use reduced mode always to not flash user*/
+
+.navbar {
+    min-height: 60px !important;
+}
+
+.navbar-brand {
+    padding: 1rem 1rem 1rem 1rem !important;
+    background-size: 25% !important;
+}
+
+#nav-drawer {
+    margin-top: calc(60px - 50px - -3em) !important;
+    height: calc(100% - 60px - 45px) !important;
+}
+
+.message-drawer {
+    margin-top: calc(60px - 50px - -3em) !important;
+    height: calc(100% - 60px - 45px) !important;
+}
+
+.message-drawer .header-container,
+.message-drawer .body-container #message-drawer-view-overview-container,
+.message-drawer .body-container .content-message-container,
+.message-drawer .footer-container [data-region="content-messages-footer-container"] {
+    background: #212121 !important;
+}
+
+.message-drawer .footer-container [data-region="content-messages-footer-container"] [data-region="send-message-txt"] {
+    background: #373a3c !important;
+}
+
+.message-drawer .footer-container .border-top[data-region="view-conversation"] {
+    border-color: #353535 !important;
+}
+
+.message-drawer .message.received .tail {
+    border-bottom-color: transparent !important;
+}
+
+.message-drawer .message {
+    background: #212121 !important;
+    color: #AAA !important;
+    box-shadow: none !important;
+    border: 1px solid #404040 !important;
+}
+
+.header-container .border-bottom[data-region="view-settings"],
+.header-container .border-bottom[data-region="view-conversation"] {
+    background: #212121 !important;
+    border-color: #353535 !important;
+}
+
+.body-container .h-100[data-region="view-settings"] {
+    background: #252525 !important;
+}
+
+
+/* Custom switch*/
+
+.switch input:not(:checked)+label::before {
+    background: #404040 !important;
+}
+
+
+/* Custom radio */
+
+.custom-radio>.custom-control-input:not(:checked)+label::before {
+    background: #404040 !important;
+}
+
+#page {
+    margin-top: calc(60px - -3em) !important;
+}
+
+.btn-light {
+    color: #fff !important;
+    background-color: #373a3c !important;
+    border-color: #373a3c !important;
+}
+
+.btn-light:hover {
+    color: #fff !important;
+    background-color: #252728 !important;
+    border-color: #1f2021 !important;
+}
+
+.btn-light:focus,
+.btn-light.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgb(55 58 60 / 50%) !important;
+    box-shadow: 0 0 0 0.2rem rgb(55 58 60 / 50%) !important;
+}
+
+
+/* Take care of selector bg-gray */
+
+.btn-light.bg-gray {
+    background-color: #252728 !important;
+}
+
+.btn-light.bg-gray:hover {
+    color: #fff !important;
+    background-color: #252728 !important;
+    border-color: #1f2021 !important;
+}
+
+button.btn-light.bg-gray:hover,
+button.btn-light.bg-gray:focus {
+    background-color: #252728 !important;
+}
+
+.btn-light.bg-gray:focus,
+.btn-light.bg-gray.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgb(55 58 60 / 50%) !important;
+    box-shadow: 0 0 0 0.2rem rgb(55 58 60 / 50%) !important;
+}
+
+.btn-default,
+.btn-secondary {
+    color: #AAA !important;
+    background-color: #252525 !important;
+    border-color: #404040 !important;
+}
+
+.table th,
+table.collection th,
+table.flexible th,
+.generaltable th,
+.table td,
+table.collection td,
+table.flexible td,
+.generaltable td {
+    border-color: #000 !important
+}
+
+.table thead th,
+table.collection thead th,
+table.flexible thead th,
+.generaltable thead th {
+    border-color: #000 !important;
+}
+
+
+/* ALERTS */
+
+.alert-danger {
+    color: #e05551 !important;
+    background-color: #4c1b19 !important;
+}
+
+.alert .close {
+    text-shadow: none !important;
+}
+
+
+/* NOTIFICATIONS PREFERENCES */
+
+.preferences-container .preference-table tr th:nth-child(even),
+.preferences-container .preference-table tr td:nth-child(even) {
+    background-color: #252525 !important;
+}
+
+
+/* NOTIFICATIONS MENU */
+
+.popover-region-toggle::before {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #404040 !important;
+}
+
+.popover-region-toggle::after {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #101010 !important;
+}
+
+.popover-region-container {
+    margin-top: 6px;
+    background-color: #101010 !important;
+    border: 1px solid #404040 !important;
+}
+
+.popover-region-header-container {
+    border-bottom: 1px solid #404040 !important;
+}
+
+.popover-region-footer-container {
+    border-top: 1px solid #404040 !important;
+    background-color: #101010 !important;
+}
+
+.region_main_settings_menu_proxy {
+    background-color: transparent !important;
+}

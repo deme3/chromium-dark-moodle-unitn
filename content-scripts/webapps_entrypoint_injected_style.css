@@ -1,0 +1,210 @@
+/*
+    Background: #212121
+    Background-Brighter: #404040
+    Background-Darker: #000
+    Foreground: #AAA
+*/
+
+body {
+    color: #AAA !important;
+    background-color: #000 !important;
+}
+
+a {
+    color: #b10b25 !important;
+}
+
+.text-white {
+    color: #AAA !important;
+}
+
+.text-black,
+.app-text-black {
+    color: #505050 !important;
+}
+
+
+/* Main header "Accesso ai corsi online" */
+
+.app-bg {
+    background-color: #212121 !important;
+    border-bottom: 5px solid #b10b25 !important;
+}
+
+.app-header-title {
+    border-left: 2px solid transparent !important;
+    color: #AAA !important;
+}
+
+
+/* Red logos -> All white logos */
+
+.app-header-logo {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: 260px 65px;
+}
+
+.app-header-logo a img {
+    opacity: 0;
+    width: 260px;
+    height: 65px;
+}
+
+#pageFooter .padding-l10.pull-left.padding-r10:first-child {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: 180px 45px;
+}
+
+#pageFooter img[alt="Università di Trento"] {
+    opacity: 0;
+    width: 180px;
+    height: 45px;
+}
+
+.navbar-default {
+    background-color: #212121 !important;
+    border-color: #404040 !important;
+}
+
+.panel {
+    background-color: #212121 !important;
+}
+
+.panel.panel-default {
+    border-color: #404040 !important;
+}
+
+
+/* Section Title */
+
+.panel-default>.panel-heading {
+    color: #AAA !important;
+    background-color: #212121 !important;
+    border-color: #404040 !important;
+}
+
+
+/* SUPPOSEDLY only section title collapse button */
+
+.btn-default {
+    color: #AAA !important;
+    background-color: #404040 !important;
+    border-color: #606060 !important;
+}
+
+.btn-default:focus,
+.btn-default.focus {
+    outline: none !important;
+    color: #AAA !important;
+    background-color: #303030 !important;
+    border-color: #606060 !important;
+}
+
+.btn-default:hover {
+    color: #AAA !important;
+    background-color: #303030 !important;
+    border-color: #606060 !important;
+}
+
+.btn-default:active,
+.btn-default.active,
+.open>.dropdown-toggle.btn-default {
+    color: #AAA !important;
+    background-color: #404040 !important;
+    border-color: #606060 !important
+}
+
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open>.dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open>.dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open>.dropdown-toggle.btn-default.focus {
+    color: #AAA !important;
+    background-color: #404040 !important;
+    border-color: #606060 !important
+}
+
+
+/* Section Title - body separator */
+
+.panel-group .panel-heading+.panel-collapse>.panel-body,
+.panel-group .panel-heading+.panel-collapse>.list-group {
+    border-top: 1px solid #404040 !important
+}
+
+
+/* Alternate course color */
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #252525 !important
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) a {
+    color: #e40f2f !important;
+}
+
+
+/* Courses separators */
+
+.table>thead>tr>th,
+.table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>td,
+.table>tfoot>tr>td {
+    border-top: 1px solid #404040 !important
+}
+
+
+/* Loading alert */
+
+.alert-warning {
+    background-color: #2d2b1f/*#5f531530*/
+    !important;
+    border-color: #66624d !important;
+    color: #8a6d3b !important
+}
+
+
+/* Informative warning */
+
+.alert-info {
+    background-color: #1e4558 !important;
+    border-color: #2397af !important;
+    color: #3d8ab1 !important;
+}
+
+.alert-info a {
+    color: #47a5d4 !important;
+}
+
+
+/* Footer (archive box) */
+
+.well {
+    background-color: #212121 !important;
+    border-color: #404040 !important;
+}
+
+
+/* Footer (links) */
+
+#pageFooter {
+    background-color: #212121 !important;
+    margin-bottom: 0 !important;
+    /* override style argument */
+}
+
+#pageFooter>.container>hr {
+    border-color: transparent !important;
+}
+
+#pageFooter>.container>hr+.row {
+    margin-bottom: 40px !important;
+}

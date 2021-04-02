@@ -1,0 +1,86 @@
+body,
+.idptype,
+#lang span {
+    color: #AAA !important;
+}
+
+a {
+    color: #b10b25 !important;
+}
+
+a:hover {
+    color: #901629 !important;
+}
+
+#logo>a>img[src="/idp/images/MyDU_logo_UNITRENTO_IT.png"],
+#logo>a>img[src="/Password1/Content/images/MyDU_logo_UNITRENTO_IT.png"] {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png");
+    background-size: 165px 50px;
+    background-repeat: no-repeat;
+    object-position: -165px 50px;
+}
+
+#logo>a>img[src="/idp/images/MyDU_logo_UNITRENTO_EN.png"],
+#logo>a>img[src="/Password1/Content/images/MyDU_logo_UNITRENTO_EN.png"] {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_en.png");
+    background-size: 165px 50px;
+    background-repeat: no-repeat;
+    object-position: -165px 50px;
+}
+
+#logincontainer {
+    background: unset !important;
+}
+
+#logincontainer #login {
+    background-color: #212121 !important;
+}
+
+#login .form-control,
+#logincontainer #login .form-control {
+    background-color: #212121 !important;
+    border-color: #404040 !important;
+    outline: none !important;
+    color: #AAA !important;
+}
+
+.form-control:focus {
+    border-color: #101010 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+.btn.btn-domain {
+    color: #AAA !important;
+    background-color: #151515 !important;
+    border-color: #404040 !important;
+    box-shadow: inset 0 3px 5px rgb(0 0 0 / 75%) !important;
+}
+
+.btn-default {
+    color: #AAA !important;
+    background-color: #252525 !important;
+    border-color: #404040 !important;
+    text-shadow: none !important;
+}
+
+input[type=password]+.progress {
+    background: #212121 !important;
+    border: 1px solid #404040;
+}
+
+.panel {
+    background-color: #212121 !important;
+}
+
+.panel.panel-default {
+    border-color: #404040 !important;
+}
+
+#footer {
+    background: #212121 !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

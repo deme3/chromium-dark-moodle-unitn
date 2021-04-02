@@ -1,0 +1,48 @@
+body {
+    background: #000 !important;
+    color: #AAA !important;
+}
+
+.switchlang {
+    color: #AAA !important;
+}
+
+#logo-it {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png");
+    background-size: 165px 50px;
+    background-repeat: no-repeat;
+    object-position: -165px 50px;
+}
+
+#logo-en {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_en.png");
+    background-size: 165px 50px;
+    background-repeat: no-repeat;
+    object-position: -165px 50px;
+}
+
+#header {
+    color: #AAA !important;
+}
+
+#header,
+#logincontainer {
+    background: #212121 !important;
+}
+
+.divider-title {
+    background: #212121 !important;
+}
+
+.divider {
+    border-color: #404040 !important;
+}
+
+#footer {
+    background: #000 !important;
+    color: #AAA !important;
+}
+
+#useful-links ul li a {
+    color: #AAA !important;
+}
