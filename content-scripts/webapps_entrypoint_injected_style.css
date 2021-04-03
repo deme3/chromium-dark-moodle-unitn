@@ -40,7 +40,7 @@ a {
 /* Red logos -> All white logos */
 
 .app-header-logo {
-    background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png") !important;
+    background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png"), url("moz-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png") !important;
     background-repeat: no-repeat !important;
     background-size: 260px 65px;
 }
@@ -52,7 +52,7 @@ a {
 }
 
 #pageFooter .padding-l10.pull-left.padding-r10:first-child {
-    background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png") !important;
+    background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png"), url("moz-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png") !important;
     background-repeat: no-repeat !important;
     background-size: 180px 45px;
 }

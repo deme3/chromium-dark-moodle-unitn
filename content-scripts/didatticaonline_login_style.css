@@ -8,14 +8,14 @@ body {
 }
 
 #logo-it {
-    background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png");
+    background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png"), url("moz-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png");
     background-size: 165px 50px;
     background-repeat: no-repeat;
     object-position: -165px 50px;
 }
 
 #logo-en {
-    background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_en.png");
+    background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_en.png"), url("moz-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_en.png");
     background-size: 165px 50px;
     background-repeat: no-repeat;
     object-position: -165px 50px;

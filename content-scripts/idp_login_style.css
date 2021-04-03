@@ -14,7 +14,7 @@ a:hover {
 
 #logo>a>img[src="/idp/images/MyDU_logo_UNITRENTO_IT.png"],
 #logo>a>img[src="/Password1/Content/images/MyDU_logo_UNITRENTO_IT.png"] {
-    background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png");
+    background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png"), url("moz-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png");
     background-size: 165px 50px;
     background-repeat: no-repeat;
     object-position: -165px 50px;
@@ -22,7 +22,7 @@ a:hover {
 
 #logo>a>img[src="/idp/images/MyDU_logo_UNITRENTO_EN.png"],
 #logo>a>img[src="/Password1/Content/images/MyDU_logo_UNITRENTO_EN.png"] {
-    background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_en.png");
+    background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_en.png"), url("moz-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_en.png");
     background-size: 165px 50px;
     background-repeat: no-repeat;
     object-position: -165px 50px;
