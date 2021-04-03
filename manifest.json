@@ -1,6 +1,6 @@
 {
     "name": "Moodle Dark Mode for UniTN",
-    "version": "1.0.0.0",
+    "version": "1.0.0.1",
     "manifest_version": 2,
     "description": "A Chromium extension to inject dark mode into UniTN's learning management system, specifically designed for UniTN branding.",
     "icons": {
