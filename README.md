@@ -9,6 +9,11 @@ You can find it packaged on
 * [Chrome Web Store](https://chrome.google.com/webstore/detail/moodle-dark-mode-for-unit/ipiigfeopdejnpfoaakochnmpjjafjmn)
 * [Firefox Addons](https://addons.mozilla.org/it/firefox/addon/moodle-dark-mode-for-unitn/) **(as of 03/04/2021 approval is delayed due to COVID-19 restrictions)**
 
+## Screenshots
+![](./screenshots/screenshot-course-choice-guest.jpeg)
+![](./screenshots/screenshot-login-prompt.jpeg)
+![](./screenshots/screenshot-course-choice.jpeg)
+
 ## Manual Installation
 The extension can be installed in Developer Mode in any Chromium browser by accessing `chrome://extensions`, toggling Developer Mode and dragging the project folder to the list.
 
