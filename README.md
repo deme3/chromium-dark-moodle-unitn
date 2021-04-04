@@ -1,5 +1,5 @@
 # chromium-dark-moodle-unitn
-[![](https://storage.googleapis.com/chrome-gcs-uploader.appspot.com/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png)](https://chrome.google.com/webstore/detail/moodle-dark-mode-for-unit/ipiigfeopdejnpfoaakochnmpjjafjmn)
+[![](https://storage.googleapis.com/chrome-gcs-uploader.appspot.com/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png)](https://chrome.google.com/webstore/detail/moodle-dark-mode-for-unit/ipiigfeopdejnpfoaakochnmpjjafjmn) [<img src="https://extensionworkshop.com/assets/img/documentation/publish/get-the-addon-178x60px.dad84b42.png" height="58">](https://addons.mozilla.org/it/firefox/addon/moodle-dark-mode-for-unitn/)
 
 A Chromium extension to inject dark mode into UniTN's learning management system, specifically designed for UniTN branding. Developed and tested under Microsoft Edge (Chromium) 89.0.774.63
 
@@ -7,7 +7,7 @@ A Chromium extension to inject dark mode into UniTN's learning management system
 You can find it packaged on
 
 * [Chrome Web Store](https://chrome.google.com/webstore/detail/moodle-dark-mode-for-unit/ipiigfeopdejnpfoaakochnmpjjafjmn)
-* [Firefox Addons](https://addons.mozilla.org/it/firefox/addon/moodle-dark-mode-for-unitn/) **(as of 03/04/2021 approval is delayed due to COVID-19 restrictions)**
+* [Firefox Addons](https://addons.mozilla.org/it/firefox/addon/moodle-dark-mode-for-unitn/)
 
 ## Screenshots
 ![](./screenshots/screenshot-course-choice-guest.jpeg)
