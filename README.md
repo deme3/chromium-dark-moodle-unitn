@@ -7,7 +7,7 @@ A Chromium extension to inject dark mode into UniTN's learning management system
 You can find it packaged on
 
 * [Chrome Web Store](https://chrome.google.com/webstore/detail/moodle-dark-mode-for-unit/ipiigfeopdejnpfoaakochnmpjjafjmn)
-* [Firefox Addons](https://addons.mozilla.org/it/firefox/addon/moodle-dark-mode-for-unitn/) **(as of 03/04/2021 approval is delayed due to COVID-19 restrictions)**
+* ~[Firefox Addons](https://addons.mozilla.org/it/firefox/addon/moodle-dark-mode-for-unitn/)~ **Due to Firefox Add-ons policies the extension has been removed from public listing and will no longer be available for install on the Store, further updates to the extension will not be pushed to the store and therefore your browser will not receive automatic updates. A packaged, self-hosted release will follow in the Releases section of this repository soon.**
 
 ## Screenshots
 ![](./screenshots/screenshot-course-choice-guest.jpeg)
