@@ -351,3 +351,26 @@ table.flexible thead th,
 .region_main_settings_menu_proxy {
     background-color: transparent !important;
 }
+
+
+/* Feedback */
+
+
+/* Preview page and form */
+
+.path-mod-feedback div.feedback_is_dependent {
+    background: #101010 !important;
+}
+
+
+/* Untested warning */
+
+.box.generalbox.feedback_description:before {
+    content: "Dark mode warning: Please note that the feedback feature hasn't been thoroughly tested and it might contain white pages!";
+    color: #e05551;
+    background-color: #4c1b19;
+    display: block;
+    padding: 1rem;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
