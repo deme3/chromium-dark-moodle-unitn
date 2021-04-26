@@ -374,3 +374,8 @@ table.flexible thead th,
     margin-bottom: 1em;
     font-weight: bold;
 }
+
+/* LaTeX */
+img.texrender {
+    filter: invert(1) brightness(300%) opacity(0.8);
+}
