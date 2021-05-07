@@ -1,3 +1,9 @@
+/* Less flashy text selection TESTING */
+
+::selection {
+    background-color: #c0153240;
+}
+
 #headerUniTN {
     background: #212121 !important;
 }
@@ -375,7 +381,10 @@ table.flexible thead th,
     font-weight: bold;
 }
 
-/* LaTeX */
-img.texrender {
+
+/* LaTeX + WYSIWIG Math */
+
+img.texrender,
+img.Wirisformula {
     filter: invert(1) brightness(300%) opacity(0.8);
 }
