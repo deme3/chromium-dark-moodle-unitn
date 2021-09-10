@@ -1,5 +1,10 @@
+a,
 .aalink {
     color: var(--addon-red) !important;
+}
+
+.text-black {
+    color: var(--white) !important;
 }
 
 body {
@@ -11,7 +16,6 @@ body {
     color: var(--addon-white) !important;
 }
 
-.text-black,
 .app-text-black {
     color: var(--addon-grey) !important;
 }
@@ -21,7 +25,7 @@ body {
 
 .app-bg {
     background-color: var(--addon-light-black)!important;
-    border-bottom: 5px solid var(--addon-red) !important;
+    
 }
 
 .app-header-title {
