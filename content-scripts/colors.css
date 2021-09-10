@@ -1,0 +1,20 @@
+/* Reddit colors */
+:root {
+    --addon-unitn-red: #C01532;
+    --addon-unitn-dark-red: #7a0d20;
+
+
+    --addon-black: #030303;
+    --addon-light-black: #1A1A1B;
+    --addon-lighter-black: #272729;
+    --addon-grey: #818384;
+    --addon-dark-grey: #272729;
+    --addon-white: #d7dadc;
+    --addon-lighter-red: #ff585b;
+    --addon-light-red: #ea0126;
+    --addon-red: var(--addon-lighter-red);
+    
+    --addon-dark-red: var(--addon-unitn-dark-red);
+    
+    --addon-green: #46d161;
+}

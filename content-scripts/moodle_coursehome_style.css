@@ -1,11 +1,11 @@
 /* Less flashy text selection TESTING */
 
 ::selection {
-    background-color: #c0153240;
+    background-color: var(--addon-unitn-red)40;
 }
 
 #headerUniTN {
-    background: #212121 !important;
+    background: var(--addon-light-black)!important;
 }
 
 a[href="https://dol.unitn.it/moodle"]::after,
@@ -17,29 +17,33 @@ a[href^="https://didatticaonline.unitn.it/ateneo/course/view.php?id="]::after {
     content: " (dark mode enabled)"
 }
 
+.aalink {
+    color: var(--addon-red) !important;
+}
+
 #headerUniTN .nav-item .nav-link {
-    color: #AAA !important;
+    color: var(--addon-white) !important;
 }
 
 .dropdown-menu {
-    background: #101010 !important;
-    color: #AAA !important;
+    background: var(--addon-black) !important;
+    color: var(--addon-white) !important;
 }
 
 .dropdown-menu .dropdown-item {
-    color: #AAA !important
+    color: var(--addon-white) !important
 }
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-    color: #AAA !important;
-    background-color: #404040 !important;
+    color: var(--addon-white) !important;
+    background-color: var(--addon-grey) !important;
 }
 
 .dropdown-item.active,
 .dropdown-item:active {
-    color: #fff !important;
-    background-color: #c01532 !important;
+    color: var(--addon-white) !important;
+    background-color: var(--addon-red) !important;
 }
 
 .card,
@@ -49,11 +53,11 @@ a[href^="https://didatticaonline.unitn.it/ateneo/course/view.php?id="]::after {
 .groupinfobox,
 .well,
 #region-main {
-    background: #212121 !important;
+    background: var(--addon-light-black)!important;
 }
 
 #region-main .card {
-    border-color: #101010 !important;
+    border-color: var(--addon-black) !important;
 }
 
 
@@ -62,29 +66,29 @@ a[href^="https://didatticaonline.unitn.it/ateneo/course/view.php?id="]::after {
 .form-control,
 .custom-select,
 #fitem_id_interests input[type=text] {
-    background-color: #212121 !important;
-    border: 1px solid #404040 !important;
+    background-color: var(--addon-light-black)!important;
+    border: 1px solid var(--addon-grey) !important;
     outline: none !important;
-    color: #AAA !important;
+    color: var(--addon-white) !important;
 }
 
 .form-control:focus,
 .custom-select:focus {
-    border-color: #101010 !important;
+    border-color: var(--addon-black) !important;
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
 }
 
 .mform fieldset {
-    border-bottom: 1px solid #404040 !important;
+    border-bottom: 1px solid var(--addon-grey) !important;
 }
 
 
 /* WYSIWIG */
 
 div.editor_atto_toolbar {
-    background: #404040 !important;
-    border: 1px solid #404040 !important;
+    background: var(--addon-grey) !important;
+    border: 1px solid var(--addon-grey) !important;
 }
 
 .editor_atto_content_wrap,
@@ -94,17 +98,17 @@ div.editor_atto_toolbar {
 }
 
 div.editor_atto_toolbar div.atto_group {
-    border: 1px solid #101010 !important;
-    border-bottom: 1px solid #101010 !important;
+    border: 1px solid var(--addon-black) !important;
+    border-bottom: 1px solid var(--addon-black) !important;
     background: transparent !important;
 }
 
 div.editor_atto_toolbar button+button {
-    border-left: 1px solid #101010 !important;
+    border-left: 1px solid var(--addon-black) !important;
 }
 
 div.editor_atto_toolbar button .icon {
-    color: #AAA !important;
+    color: var(--addon-white) !important;
 }
 
 .editor_atto_toolbar button {
@@ -112,22 +116,22 @@ div.editor_atto_toolbar button .icon {
 }
 
 .editor_atto_toolbar button:hover {
-    background: #101010 !important;
+    background: var(--addon-black) !important;
 }
 
 
 /* Sidebar links */
 
 .list-group-item:not(.active) {
-    background: #212121 !important;
-    color: #AAA;
+    background: var(--addon-light-black)!important;
+    color: var(--addon-white);
     border-width: 1px;
-    border-color: #404040;
+    border-color: var(--addon-dark-grey);
 }
 
 .list-group-item:not(.active):hover {
-    background: #101010 !important;
-    color: #AAA !important;
+    background: var(--addon-black) !important;
+    color: var(--addon-white) !important;
 }
 
 
@@ -141,22 +145,22 @@ div.editor_atto_toolbar button .icon {
 #region-main-box,
 body,
 html {
-    background: #101010 !important;
-    color: #AAA !important;
+    background: var(--addon-black) !important;
+    color: var(--addon-white) !important;
 }
 
 
 /* Course section titles */
 
 .sectionname {
-    color: #b10b25 !important;
+    color: var(--addon-red) !important;
 }
 
 
 /* Course section separators */
 
 .course-content ul li.section.main {
-    border-bottom: 1px solid #404040 !important;
+    border-bottom: 1px solid var(--addon-grey) !important;
 }
 
 
@@ -187,7 +191,7 @@ use reduced mode always to not flash user*/
 .message-drawer .body-container #message-drawer-view-overview-container,
 .message-drawer .body-container .content-message-container,
 .message-drawer .footer-container [data-region="content-messages-footer-container"] {
-    background: #212121 !important;
+    background: var(--addon-light-black)!important;
 }
 
 .message-drawer .footer-container [data-region="content-messages-footer-container"] [data-region="send-message-txt"] {
@@ -203,34 +207,34 @@ use reduced mode always to not flash user*/
 }
 
 .message-drawer .message {
-    background: #212121 !important;
-    color: #AAA !important;
+    background: var(--addon-light-black)!important;
+    color: var(--addon-white) !important;
     box-shadow: none !important;
-    border: 1px solid #404040 !important;
+    border: 1px solid var(--addon-grey) !important;
 }
 
 .header-container .border-bottom[data-region="view-settings"],
 .header-container .border-bottom[data-region="view-conversation"] {
-    background: #212121 !important;
+    background: var(--addon-light-black)!important;
     border-color: #353535 !important;
 }
 
 .body-container .h-100[data-region="view-settings"] {
-    background: #252525 !important;
+    background: var(--addon-light-black) !important;
 }
 
 
 /* Custom switch*/
 
 .switch input:not(:checked)+label::before {
-    background: #404040 !important;
+    background: var(--addon-grey) !important;
 }
 
 
 /* Custom radio */
 
 .custom-radio>.custom-control-input:not(:checked)+label::before {
-    background: #404040 !important;
+    background: var(--addon-grey) !important;
 }
 
 #page {
@@ -238,13 +242,13 @@ use reduced mode always to not flash user*/
 }
 
 .btn-light {
-    color: #fff !important;
+    color: var(--addon-white) !important;
     background-color: #373a3c !important;
     border-color: #373a3c !important;
 }
 
 .btn-light:hover {
-    color: #fff !important;
+    color: var(--addon-white) !important;
     background-color: #252728 !important;
     border-color: #1f2021 !important;
 }
@@ -263,7 +267,7 @@ use reduced mode always to not flash user*/
 }
 
 .btn-light.bg-gray:hover {
-    color: #fff !important;
+    color: var(--addon-white) !important;
     background-color: #252728 !important;
     border-color: #1f2021 !important;
 }
@@ -281,9 +285,9 @@ button.btn-light.bg-gray:focus {
 
 .btn-default,
 .btn-secondary {
-    color: #AAA !important;
-    background-color: #252525 !important;
-    border-color: #404040 !important;
+    color: var(--addon-white) !important;
+    background-color: var(--addon-light-black) !important;
+    border-color: var(--addon-dark-grey) !important;
 }
 
 .table th,
@@ -294,22 +298,22 @@ table.flexible th,
 table.collection td,
 table.flexible td,
 .generaltable td {
-    border-color: #000 !important
+    border-color: var(--addon-black) !important
 }
 
 .table thead th,
 table.collection thead th,
 table.flexible thead th,
 .generaltable thead th {
-    border-color: #000 !important;
+    border-color: var(--addon-black) !important;
 }
 
 
 /* ALERTS */
 
 .alert-danger {
-    color: #e05551 !important;
-    background-color: #4c1b19 !important;
+    color: var(--addon-lighter-red) !important;
+    background-color: var(--addon-dark-red) !important;
 }
 
 .alert .close {
@@ -321,7 +325,7 @@ table.flexible thead th,
 
 .preferences-container .preference-table tr th:nth-child(even),
 .preferences-container .preference-table tr td:nth-child(even) {
-    background-color: #252525 !important;
+    background-color: var(--addon-light-black) !important;
 }
 
 
@@ -330,28 +334,28 @@ table.flexible thead th,
 .popover-region-toggle::before {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-bottom: 10px solid #404040 !important;
+    border-bottom: 10px solid var(--addon-grey) !important;
 }
 
 .popover-region-toggle::after {
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
-    border-bottom: 9px solid #101010 !important;
+    border-bottom: 9px solid var(--addon-black) !important;
 }
 
 .popover-region-container {
     margin-top: 6px;
-    background-color: #101010 !important;
-    border: 1px solid #404040 !important;
+    background-color: var(--addon-black) !important;
+    border: 1px solid var(--addon-grey) !important;
 }
 
 .popover-region-header-container {
-    border-bottom: 1px solid #404040 !important;
+    border-bottom: 1px solid var(--addon-grey) !important;
 }
 
 .popover-region-footer-container {
-    border-top: 1px solid #404040 !important;
-    background-color: #101010 !important;
+    border-top: 1px solid var(--addon-grey) !important;
+    background-color: var(--addon-black) !important;
 }
 
 .region_main_settings_menu_proxy {
@@ -365,7 +369,7 @@ table.flexible thead th,
 /* Preview page and form */
 
 .path-mod-feedback div.feedback_is_dependent {
-    background: #101010 !important;
+    background: var(--addon-black) !important;
 }
 
 
@@ -373,8 +377,8 @@ table.flexible thead th,
 
 .box.generalbox.feedback_description:before {
     content: "Dark mode warning: Please note that the feedback feature hasn't been thoroughly tested and it might contain white pages!";
-    color: #e05551;
-    background-color: #4c1b19;
+    color: var(--addon-lighter-red);
+    background-color: var(--addon-dark-red);
     display: block;
     padding: 1rem;
     margin-bottom: 1em;

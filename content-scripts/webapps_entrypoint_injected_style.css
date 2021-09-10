@@ -1,39 +1,32 @@
-/*
-    Background: #212121
-    Background-Brighter: #404040
-    Background-Darker: #000
-    Foreground: #AAA
-*/
-
-body {
-    color: #AAA !important;
-    background-color: #000 !important;
+.aalink {
+    color: var(--addon-red) !important;
 }
 
-a {
-    color: #b10b25 !important;
+body {
+    color: var(--addon-white) !important;
+    background-color: var(--addon-black) !important;
 }
 
 .text-white {
-    color: #AAA !important;
+    color: var(--addon-white) !important;
 }
 
 .text-black,
 .app-text-black {
-    color: #505050 !important;
+    color: var(--addon-grey) !important;
 }
 
 
 /* Main header "Accesso ai corsi online" */
 
 .app-bg {
-    background-color: #212121 !important;
-    border-bottom: 5px solid #b10b25 !important;
+    background-color: var(--addon-light-black)!important;
+    border-bottom: 5px solid var(--addon-red) !important;
 }
 
 .app-header-title {
     border-left: 2px solid transparent !important;
-    color: #AAA !important;
+    color: var(--addon-white) !important;
 }
 
 
@@ -64,56 +57,56 @@ a {
 }
 
 .navbar-default {
-    background-color: #212121 !important;
-    border-color: #404040 !important;
+    background-color: var(--addon-light-black)!important;
+    border-color: var(--addon-dark-grey) !important;
 }
 
 .panel {
-    background-color: #212121 !important;
+    background-color: var(--addon-light-black)!important;
 }
 
 .panel.panel-default {
-    border-color: #404040 !important;
+    border-color: var(--addon-dark-grey) !important;
 }
 
 
 /* Section Title */
 
 .panel-default>.panel-heading {
-    color: #AAA !important;
-    background-color: #212121 !important;
-    border-color: #404040 !important;
+    color: var(--addon-white) !important;
+    background-color: var(--addon-light-black)!important;
+    border-color: var(--addon-dark-grey) !important;
 }
 
 
 /* SUPPOSEDLY only section title collapse button */
 
 .btn-default {
-    color: #AAA !important;
-    background-color: #404040 !important;
-    border-color: #606060 !important;
+    color: var(--addon-white) !important;
+    background-color: var(--addon-grey) !important;
+    border-color: var(--addon-dark-grey) !important;
 }
 
 .btn-default:focus,
 .btn-default.focus {
     outline: none !important;
-    color: #AAA !important;
-    background-color: #303030 !important;
-    border-color: #606060 !important;
+    color: var(--addon-white) !important;
+    background-color: var(--addon-lighter-black) !important;
+    border-color: var(--addon-dark-grey) !important;
 }
 
 .btn-default:hover {
-    color: #AAA !important;
-    background-color: #303030 !important;
-    border-color: #606060 !important;
+    color: var(--addon-white) !important;
+    background-color: var(--addon-lighter-black) !important;
+    border-color: var(--addon-dark-grey) !important;
 }
 
 .btn-default:active,
 .btn-default.active,
 .open>.dropdown-toggle.btn-default {
-    color: #AAA !important;
-    background-color: #404040 !important;
-    border-color: #606060 !important
+    color: var(--addon-white) !important;
+    background-color: var(--addon-grey) !important;
+    border-color: var(--addon-dark-grey) !important
 }
 
 .btn-default:active:hover,
@@ -125,9 +118,9 @@ a {
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open>.dropdown-toggle.btn-default.focus {
-    color: #AAA !important;
-    background-color: #404040 !important;
-    border-color: #606060 !important
+    color: var(--addon-white) !important;
+    background-color: var(--addon-grey) !important;
+    border-color: var(--addon-dark-grey) !important
 }
 
 
@@ -135,18 +128,18 @@ a {
 
 .panel-group .panel-heading+.panel-collapse>.panel-body,
 .panel-group .panel-heading+.panel-collapse>.list-group {
-    border-top: 1px solid #404040 !important
+    border-top: 1px solid var(--addon-grey) !important
 }
 
 
 /* Alternate course color */
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: #252525 !important
+    background-color: var(--addon-light-black) !important
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) a {
-    color: #e40f2f !important;
+    color: var(--addon-light-red) !important;
 }
 
 
@@ -158,7 +151,7 @@ a {
 .table>thead>tr>td,
 .table>tbody>tr>td,
 .table>tfoot>tr>td {
-    border-top: 1px solid #404040 !important
+    border-top: 1px solid var(--addon-grey) !important
 }
 
 
@@ -188,15 +181,15 @@ a {
 /* Footer (archive box) */
 
 .well {
-    background-color: #212121 !important;
-    border-color: #404040 !important;
+    background-color: var(--addon-light-black)!important;
+    border-color: var(--addon-dark-grey) !important;
 }
 
 
 /* Footer (links) */
 
 #pageFooter {
-    background-color: #212121 !important;
+    background-color: var(--addon-light-black)!important;
     margin-bottom: 0 !important;
     /* override style argument */
 }

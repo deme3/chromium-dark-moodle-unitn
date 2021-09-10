@@ -1,10 +1,14 @@
 body {
-    background: #000 !important;
-    color: #AAA !important;
+    background: var(--addon-black) !important;
+    color: var(--addon-white) !important;
+}
+
+.aalink {
+    color: var(--addon-red) !important;
 }
 
 .switchlang {
-    color: #AAA !important;
+    color: var(--addon-white) !important;
 }
 
 #logo-it {
@@ -22,27 +26,32 @@ body {
 }
 
 #header {
-    color: #AAA !important;
+    color: var(--addon-white) !important;
 }
 
 #header,
 #logincontainer {
-    background: #212121 !important;
+    background: var(--light-black) !important;
 }
 
 .divider-title {
-    background: #212121 !important;
+    background: var(--light-black) !important;
 }
 
 .divider {
-    border-color: #404040 !important;
+    border-color: var(--lighter-black) !important;
 }
 
 #footer {
-    background: #000 !important;
-    color: #AAA !important;
+    background: var(--addon-black) !important;
+    color: var(--addon-white) !important;
 }
 
 #useful-links ul li a {
-    color: #AAA !important;
+    color: var(--addon-white) !important;
+}
+
+a:link {
+    color: var(--addon-white) !important;
+    text-decoration: underline;
 }
