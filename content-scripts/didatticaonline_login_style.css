@@ -3,10 +3,6 @@ body {
     color: var(--addon-white) !important;
 }
 
-.aalink {
-    color: var(--addon-red) !important;
-}
-
 .switchlang {
     color: var(--addon-white) !important;
 }
@@ -31,15 +27,15 @@ body {
 
 #header,
 #logincontainer {
-    background: var(--light-black) !important;
+    background: var(--addon-light-black) !important;
 }
 
 .divider-title {
-    background: var(--light-black) !important;
+    background: var(--addon-light-black) !important;
 }
 
 .divider {
-    border-color: var(--lighter-black) !important;
+    border-color: var(--addon-lighter-black) !important;
 }
 
 #footer {
