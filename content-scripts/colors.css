@@ -11,10 +11,10 @@
     --addon-dark-grey: #272729;
     --addon-white: #d7dadc;
     --addon-lighter-red: #ff585b;
-    --addon-light-red: #ea0126;
-    --addon-red: var(--addon-lighter-red);
-    
-    --addon-dark-red: var(--addon-unitn-dark-red);
+    --addon-light-red: #ff4f4f;
+    --addon-red: #b10b25;
+    --addon-dark-red: #901629;
     
     --addon-green: #46d161;
+    --addon-blue: #4fbcff;
 }

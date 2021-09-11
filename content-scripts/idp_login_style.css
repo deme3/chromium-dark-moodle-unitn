@@ -4,15 +4,6 @@ body,
     color: var(--addon-white) !important;
 }
 
-a:hover {
-    color: var(--addon-dark-red) !important;
-}
-
-.aalink {
-    color: var(--addon-red) !important;
-}
-
-
 #logo>a>img[src="/idp/images/MyDU_logo_UNITRENTO_IT.png"],
 #logo>a>img[src="/Password1/Content/images/MyDU_logo_UNITRENTO_IT.png"] {
     background-image: url("chrome-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png"), url("moz-extension://__MSG_@@extension_id__/content-scripts/img/logo_unitn_it.png");

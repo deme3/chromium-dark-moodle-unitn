@@ -43,11 +43,15 @@ body {
     color: var(--addon-white) !important;
 }
 
-#useful-links ul li a {
-    color: var(--addon-white) !important;
-}
-
+#useful-links ul li a,
 a:link {
     color: var(--addon-white) !important;
-    text-decoration: underline;
+    text-decoration: underline !important;
+}
+
+#useful-links ul li a:hover,  
+#useful-links ul li a:focus,
+a:focus, a:hover {
+    color: var(--addon-red) !important;
+    text-decoration: underline !important;
 }
