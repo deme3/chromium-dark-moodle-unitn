@@ -18,6 +18,10 @@ a[href^="https://didatticaonline.unitn.it/ateneo/course/view.php?id="]::after {
 }
 
 .aalink {
+    color: var(--addon-light-red) !important;
+}
+
+.aalink:hover {
     color: var(--addon-red) !important;
 }
 
@@ -153,7 +157,7 @@ html {
 /* Course section titles */
 
 .sectionname {
-    color: var(--addon-red) !important;
+    color: var(--addon-light-red) !important;
 }
 
 
