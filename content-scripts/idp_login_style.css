@@ -1,15 +1,7 @@
 body,
 .idptype,
 #lang span {
-    color: #AAA !important;
-}
-
-a {
-    color: #b10b25 !important;
-}
-
-a:hover {
-    color: #901629 !important;
+    color: var(--addon-white) !important;
 }
 
 #logo>a>img[src="/idp/images/MyDU_logo_UNITRENTO_IT.png"],
@@ -33,52 +25,52 @@ a:hover {
 }
 
 #logincontainer #login {
-    background-color: #212121 !important;
+    background-color: var(--addon-light-black)!important;
 }
 
 #login .form-control,
 #logincontainer #login .form-control {
-    background-color: #212121 !important;
-    border-color: #404040 !important;
+    background-color: var(--addon-light-black)!important;
+    border-color: var(--addon-dark-grey) !important;
     outline: none !important;
-    color: #AAA !important;
+    color: var(--addon-white) !important;
 }
 
 .form-control:focus {
-    border-color: #101010 !important;
+    border-color: var(--addon-black) !important;
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
 }
 
 .btn.btn-domain {
-    color: #AAA !important;
+    color: var(--addon-white) !important;
     background-color: #151515 !important;
-    border-color: #404040 !important;
+    border-color: var(--addon-dark-grey) !important;
     box-shadow: inset 0 3px 5px rgb(0 0 0 / 75%) !important;
 }
 
 .btn-default {
-    color: #AAA !important;
-    background-color: #252525 !important;
-    border-color: #404040 !important;
+    color: var(--addon-white) !important;
+    background-color: var(--addon-light-black) !important;
+    border-color: var(--addon-dark-grey) !important;
     text-shadow: none !important;
 }
 
 input[type=password]+.progress {
-    background: #212121 !important;
-    border: 1px solid #404040;
+    background: var(--addon-light-black)!important;
+    border: 1px solid var(--addon-grey);
 }
 
 .panel {
-    background-color: #212121 !important;
+    background-color: var(--addon-light-black)!important;
 }
 
 .panel.panel-default {
-    border-color: #404040 !important;
+    border-color: var(--addon-dark-grey) !important;
 }
 
 #footer {
-    background: #212121 !important;
+    background: var(--addon-light-black)!important;
     position: absolute;
     bottom: 0;
     left: 0;

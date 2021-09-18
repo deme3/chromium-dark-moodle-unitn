@@ -1,5 +1,5 @@
 body {
-    background-color: #000000 !important;
+    background-color: var(--addon-black) !important;
 }
 
 header {
@@ -7,17 +7,21 @@ header {
 }
 
 .navbar-default {
-    background-image: linear-gradient(to bottom, #212121 0, #000 100%) !important;
-    background-color: #212121 !important;
-    border-color: #404040 !important;
+    background-image: linear-gradient(to bottom, var(--addon-light-black)0, var(--addon-black) 100%) !important;
+    background-color: var(--addon-light-black)!important;
+    border-color: var(--addon-dark-grey) !important;
 }
 
 span.navbar-brand,
 .navbar-nav>li>a {
-    text-shadow: 0px -1px 0 #000 !important;
-    color: #AAA !important;
+    text-shadow: 0px -1px 0 var(--addon-black) !important;
+    color: var(--addon-white) !important;
 }
 
 header .container .row .text-right a img {
     filter: invert(1) !important;
+}
+
+.aalink {
+    color: var(--addon-red) !important;
 }

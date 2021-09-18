@@ -1,10 +1,10 @@
 body {
-    background: #000 !important;
-    color: #AAA !important;
+    background: var(--addon-black) !important;
+    color: var(--addon-white) !important;
 }
 
 .switchlang {
-    color: #AAA !important;
+    color: var(--addon-white) !important;
 }
 
 #logo-it {
@@ -22,27 +22,36 @@ body {
 }
 
 #header {
-    color: #AAA !important;
+    color: var(--addon-white) !important;
 }
 
 #header,
 #logincontainer {
-    background: #212121 !important;
+    background: var(--addon-light-black) !important;
 }
 
 .divider-title {
-    background: #212121 !important;
+    background: var(--addon-light-black) !important;
 }
 
 .divider {
-    border-color: #404040 !important;
+    border-color: var(--addon-lighter-black) !important;
 }
 
 #footer {
-    background: #000 !important;
-    color: #AAA !important;
+    background: var(--addon-black) !important;
+    color: var(--addon-white) !important;
 }
 
-#useful-links ul li a {
-    color: #AAA !important;
+#useful-links ul li a,
+a:link {
+    color: var(--addon-white) !important;
+    text-decoration: underline !important;
+}
+
+#useful-links ul li a:hover,  
+#useful-links ul li a:focus,
+a:focus, a:hover {
+    color: var(--addon-red) !important;
+    text-decoration: underline !important;
 }
