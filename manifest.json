@@ -36,6 +36,7 @@
     }, {
         "matches": ["https://didatticaonline.unitn.it/ateneo/loginUniTN.php*",
             "https://didatticaonline.unitn.it/dol/loginUniTN.php*",
+            "https://didatticaonline.unitn.it/cla/loginUniTN.php",
             "https://idp.unitn.it/idp/profile/SAML2/Redirect/SSO*",
             "https://webapps.unitn.it/Password1/it/PwdCng/*"
         ],
@@ -92,6 +93,7 @@
             "https://didatticaonline.unitn.it/dol/mod/feedback/complete.php*",
             "https://didatticaonline.unitn.it/dol/mod/feedback/view.php*",
             "https://didatticaonline.unitn.it/dol/mod/feedback/print.php*",
+            "https://didatticaonline.unitn.it/dol/mod/attendance/view.php*",
             "https://didatticaonline.unitn.it/ateneo/mod/forum/discuss.php?d=*",
             "https://didatticaonline.unitn.it/ateneo/message/notificationpreferences.php*",
             "https://didatticaonline.unitn.it/ateneo/",
@@ -138,6 +140,7 @@
             "https://didatticaonline.unitn.it/ateneo/mod/feedback/complete.php*",
             "https://didatticaonline.unitn.it/ateneo/mod/feedback/view.php*",
             "https://didatticaonline.unitn.it/ateneo/mod/feedback/print.php*",
+            "https://didatticaonline.unitn.it/ateneo/mod/attendance/view.php*",
             "https://didatticaonline.unitn.it/cla/mod/forum/discuss.php?d=*",
             "https://didatticaonline.unitn.it/cla/message/notificationpreferences.php*",
             "https://didatticaonline.unitn.it/cla/",
@@ -183,7 +186,8 @@
             "https://didatticaonline.unitn.it/cla/iplookup/index.php*",
             "https://didatticaonline.unitn.it/cla/mod/feedback/complete.php*",
             "https://didatticaonline.unitn.it/cla/mod/feedback/view.php*",
-            "https://didatticaonline.unitn.it/cla/mod/feedback/print.php*"
+            "https://didatticaonline.unitn.it/cla/mod/feedback/print.php*",
+            "https://didatticaonline.unitn.it/cla/mod/attendance/view.php*"
         ],
         "css": ["content-scripts/colors.css", "content-scripts/moodle_coursehome_style.css"],
         "js": ["content-scripts/palettes.js", "content-scripts/palette-inject.js"]
