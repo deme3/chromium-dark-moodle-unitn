@@ -82,6 +82,12 @@ body {
     border-color: var(--addon-dark-grey) !important;
 }
 
+/* SUPPOSEDLY only used for academic year divisions */
+#studentCourseTable legend {
+    border-color: var(--addon-grey) !important;
+    border-width: 4px !important;
+    color: var(--addon-white) !important;
+}
 
 /* SUPPOSEDLY only section title collapse button */
 
