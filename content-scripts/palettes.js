@@ -1,4 +1,4 @@
-{
+var palettes = {
     "reddit-dark": {
         "display-name": "Reddit Dark Palette",
         "--addon-unitn-red": "#C01532",
