@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UniTN Moodle Dark Mode Configuration</title>
+    <script src="options.js"></script>
+    <script src="content-scripts/palettes.js"></script>
+    <style>
+        body,html {
+            width: 220px;
+            margin: 0;
+            padding: 0;
+        }
+        #palette-selector {
+            width: 218px;
+            margin: 0 auto;
+        }
+
+        .palette-choice {
+            width: 200px;
+            height: 200px;
+            border-radius: 6px;
+            border: 1px solid #AAA;
+            margin: 8px;
+        }
+
+        .palette-choice:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .palette-choice.palette-choice-dark {
+            border: 1px solid #30363d;
+            background: #0d1117;
+        }
+
+        .palette-choice.palette-selected {
+            border: 1px solid #1b681b;
+            box-shadow: 0px 0px 0px 4px #1b681bBB;
+        }
+
+        .palette-choice .predominance {
+            display: block;
+            line-height: 160px;
+            border-radius: 6px 6px 0 0;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 16pt;
+        }
+
+        .predominance-dark {
+            background: #010409;
+            color: #c9d1d950;
+        }
+        
+        .palette-choice .palette-display-name {
+            border-top: 1px solid #AAA;
+            font-weight: bold;
+            line-height: 40px;
+            padding: 0 8px;
+            font-size: 11pt;
+            color: #000000BB;
+        }
+
+        .palette-choice.palette-choice-dark .palette-display-name {
+            color: #c9d1d9;
+            border-top-color: #30363d;
+        }
+    </style>
+</head>
+<body>
+    <section id="palette-selector">
+        
+    </section>
+</body>
+</html>

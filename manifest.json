@@ -6,11 +6,23 @@
     "icons": {
         "128": "icons/unitn128x128v2.png"
     },
+    "permissions": ["storage"],
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    },
+    "browser_action": {
+        "default_popup": "options.html"
+    },
+    "background": {
+        "service_worker": "storage_worker.js"
+    },
     "content_scripts": [{
         "matches": ["https://webapps.unitn.it/gestionecorsi/*",
             "http://webapps.unitn.it/gestionecorsi/*"
         ],
-        "css": ["content-scripts/colors.css", "content-scripts/webapps_entrypoint_injected_style.css"]
+        "css": ["content-scripts/colors.css", "content-scripts/webapps_entrypoint_injected_style.css"],
+        "js": ["content-scripts/palettes.js", "content-scripts/palette-inject.js"]
     }, {
         "matches": ["https://idsrv.unitn.it/sts/identity/callback",
             "https://idsrv.unitn.it/sts/identity/saml2service/Acs",
@@ -19,19 +31,22 @@
             "https://idsrv.unitn.it/sts/identity/*",
             "https://idsrv.unitn.it/sts/identity/connect/authorize?client_id=it.unitn.icts.myunitn.mvc&redirect_uri=*&response_mode=*&response_type=*&scope=*&state=*&nonce=*"
         ],
-        "css": ["content-scripts/colors.css", "content-scripts/security_token_service_style.css"]
+        "css": ["content-scripts/colors.css", "content-scripts/security_token_service_style.css"],
+        "js": ["content-scripts/palettes.js", "content-scripts/palette-inject.js"]
     }, {
         "matches": ["https://didatticaonline.unitn.it/ateneo/loginUniTN.php*",
             "https://didatticaonline.unitn.it/dol/loginUniTN.php*",
             "https://idp.unitn.it/idp/profile/SAML2/Redirect/SSO*",
             "https://webapps.unitn.it/Password1/it/PwdCng/*"
         ],
-        "css": ["content-scripts/colors.css", "content-scripts/didatticaonline_login_style.css"]
+        "css": ["content-scripts/colors.css", "content-scripts/didatticaonline_login_style.css"],
+        "js": ["content-scripts/palettes.js", "content-scripts/palette-inject.js"]
     }, {
         "matches": ["https://idp.unitn.it/idp/profile/SAML2/Redirect/SSO*",
             "https://webapps.unitn.it/Password1/it/PwdCng/*"
         ],
-        "css": ["content-scripts/colors.css", "content-scripts/idp_login_style.css"]
+        "css": ["content-scripts/colors.css", "content-scripts/idp_login_style.css"],
+        "js": ["content-scripts/palettes.js", "content-scripts/palette-inject.js"]
     }, {
         "matches": ["https://didatticaonline.unitn.it/dol/",
             "https://didatticaonline.unitn.it/dol/course/view.php*",
@@ -122,7 +137,8 @@
             "https://didatticaonline.unitn.it/ateneo/mod/feedback/view.php*",
             "https://didatticaonline.unitn.it/ateneo/mod/feedback/print.php*"
         ],
-        "css": ["content-scripts/colors.css", "content-scripts/moodle_coursehome_style.css"]
+        "css": ["content-scripts/colors.css", "content-scripts/moodle_coursehome_style.css"],
+        "js": ["content-scripts/palettes.js", "content-scripts/palette-inject.js"]
     }],
     "web_accessible_resources": [
         "content-scripts/img/logo_unitn_it.png",

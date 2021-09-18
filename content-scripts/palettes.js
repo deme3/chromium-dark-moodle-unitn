@@ -1,6 +1,7 @@
 var palettes = {
     "reddit-dark": {
         "display-name": "Reddit Dark Palette",
+        "palette-predominance": "dark",
         "--addon-unitn-red": "#C01532",
         "--addon-unitn-dark-red": "#7a0d20",
         "--addon-black": "#030303",
@@ -18,6 +19,7 @@ var palettes = {
     },
     "unitn-dark": {
         "display-name": "UniTN Dark Palette",
+        "palette-predominance": "dark",
         "--addon-unitn-red": "#C01532", 
         "--addon-unitn-dark-red": "#7a0d20", 
         "--addon-black": "#000000", 
@@ -34,3 +36,45 @@ var palettes = {
         "--addon-blue": "#4fbcff"
     }
 }
+
+function load_palettes_selector() {
+    // load only if page has palette selector
+    // otherwise means it's palette-inject
+    if(document.getElementById("palette-selector")) {
+        let paletteSelector = document.getElementById("palette-selector");
+
+        for(let paletteId in palettes) {
+            let paletteData = palettes[paletteId];
+            let paletteDisplayName = paletteData["display-name"];
+            let palettePredominance = paletteData["palette-predominance"];
+
+            let paletteBaseElement = document.createElement("div");
+            paletteBaseElement.classList.add("palette-choice", `palette-choice-${palettePredominance}`);
+            paletteBaseElement.setAttribute("data-palette-id", paletteId);
+            paletteBaseElement.addEventListener("click", () => {
+                chrome.tabs.query({active: true, currentWindow: true}, (tabsFound) => {
+                    chrome.tabs.sendMessage(tabsFound[0].id, { action: "applyPalette", palette: paletteBaseElement.getAttribute("data-palette-id") }, (response) => {
+                        if(response.success) {
+                            current_palette = paletteBaseElement.getAttribute("data-palette-id");
+                            save_options();
+                        }
+                    });
+                });
+            });
+            
+            let palettePredominanceElement = document.createElement("div");
+            palettePredominanceElement.classList.add(`predominance-${palettePredominance}`, `predominance`);
+            palettePredominanceElement.innerText = palettePredominance[0].toUpperCase() + palettePredominance.substr(1, palettePredominance.length-1);
+            
+
+            let paletteDisplayNameElement = document.createElement("div");
+            paletteDisplayNameElement.classList.add("palette-display-name");
+            paletteDisplayNameElement.innerText = paletteDisplayName;
+
+            paletteBaseElement.append(palettePredominanceElement, paletteDisplayNameElement);
+            paletteSelector.append(paletteBaseElement);
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', load_palettes_selector);
