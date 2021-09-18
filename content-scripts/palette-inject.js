@@ -1,12 +1,13 @@
 let currentPalette = null;
-window.addEventListener("load", () => {
-    chrome.runtime.sendMessage({ action: "getStorage" }, (response) => {
-        if(response.chosen_palette) {
-            currentPalette = response.chosen_palette;
-            applyPalette(currentPalette);
-        }
-    });
 
+chrome.runtime.sendMessage({ action: "getStorage" }, (response) => {
+    if(response.chosen_palette) {
+        currentPalette = response.chosen_palette;
+        applyPalette(currentPalette);
+    }
+});
+
+window.addEventListener("load", () => {
     chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
         if (request.action === "applyPalette") {
             sendResponse({ success: applyPalette(request.palette) });
