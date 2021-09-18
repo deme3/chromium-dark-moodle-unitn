@@ -6,7 +6,7 @@
     "icons": {
         "128": "icons/unitn128x128v2.png"
     },
-    "permissions": ["storage"],
+    "permissions": ["storage", "tabs"],
     "options_ui": {
         "page": "options.html",
         "open_in_tab": false

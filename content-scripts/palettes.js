@@ -53,12 +53,22 @@ function load_palettes_selector() {
             paletteBaseElement.setAttribute("data-palette-id", paletteId);
             paletteBaseElement.addEventListener("click", () => {
                 chrome.tabs.query({active: true, currentWindow: true}, (tabsFound) => {
-                    chrome.tabs.sendMessage(tabsFound[0].id, { action: "applyPalette", palette: paletteBaseElement.getAttribute("data-palette-id") }, (response) => {
-                        if(response.success) {
-                            current_palette = paletteBaseElement.getAttribute("data-palette-id");
-                            save_options();
-                        }
-                    });
+                    let tabInfo = tabsFound[0];
+                    let tabURL = new URL(tabInfo.url);
+
+                    if(tabURL.href.includes(chrome.runtime.id) || tabURL.hostname === "extensions") {
+                        // I'm in options page, not real time tab popup!
+                        // TODO : better separate flows
+                        current_palette = paletteBaseElement.getAttribute("data-palette-id");
+                        save_options();
+                    } else {
+                        chrome.tabs.sendMessage(tabsFound[0].id, { action: "applyPalette", palette: paletteBaseElement.getAttribute("data-palette-id") }, (response) => {
+                            if(response.success) {
+                                current_palette = paletteBaseElement.getAttribute("data-palette-id");
+                                save_options();
+                            }
+                        });
+                    }
                 });
             });
             
