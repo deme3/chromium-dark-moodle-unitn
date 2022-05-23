@@ -1,6 +1,6 @@
 {
     "name": "Moodle Dark Mode for UniTN",
-    "version": "1.0.0.6",
+    "version": "1.0.0.7",
     "manifest_version": 2,
     "description": "A Chromium extension to inject dark mode into UniTN's learning management system, specifically designed for UniTN branding.",
     "icons": {
@@ -43,6 +43,7 @@
             "https://didatticaonline.unitn.it/dol/mod/resource/view.php*",
             "https://didatticaonline.unitn.it/dol/mod/forum/discuss.php*",
             "https://didatticaonline.unitn.it/dol/mod/kalvidres/view.php*",
+            "https://didatticaonline.unitn.it/dol/mod/daddyvideo/view.php*",
             "https://didatticaonline.unitn.it/dol/user/profile.php*",
             "https://didatticaonline.unitn.it/dol/grade/report/overview/index.php*",
             "https://didatticaonline.unitn.it/dol/user/preferences.php*",
@@ -76,6 +77,8 @@
             "https://didatticaonline.unitn.it/dol/mod/feedback/complete.php*",
             "https://didatticaonline.unitn.it/dol/mod/feedback/view.php*",
             "https://didatticaonline.unitn.it/dol/mod/feedback/print.php*",
+            "https://didatticaonline.unitn.it/dol/mod/choice/view.php*",
+            "https://didatticaonline.unitn.it/dol/mod/folder/view.php*",
             "https://didatticaonline.unitn.it/ateneo/mod/forum/discuss.php?d=*",
             "https://didatticaonline.unitn.it/ateneo/message/notificationpreferences.php*",
             "https://didatticaonline.unitn.it/ateneo/",
@@ -88,6 +91,7 @@
             "https://didatticaonline.unitn.it/ateneo/mod/resource/view.php*",
             "https://didatticaonline.unitn.it/ateneo/mod/forum/discuss.php*",
             "https://didatticaonline.unitn.it/ateneo/mod/kalvidres/view.php*",
+            "https://didatticaonline.unitn.it/ateneo/mod/daddyvideo/view.php*",
             "https://didatticaonline.unitn.it/ateneo/user/profile.php*",
             "https://didatticaonline.unitn.it/ateneo/grade/report/overview/index.php*",
             "https://didatticaonline.unitn.it/ateneo/user/preferences.php*",
@@ -120,7 +124,9 @@
             "https://didatticaonline.unitn.it/ateneo/iplookup/index.php*",
             "https://didatticaonline.unitn.it/ateneo/mod/feedback/complete.php*",
             "https://didatticaonline.unitn.it/ateneo/mod/feedback/view.php*",
-            "https://didatticaonline.unitn.it/ateneo/mod/feedback/print.php*"
+            "https://didatticaonline.unitn.it/ateneo/mod/feedback/print.php*",
+            "https://didatticaonline.unitn.it/ateneo/mod/choice/view.php*",
+            "https://didatticaonline.unitn.it/ateneo/mod/folder/view.php*"
         ],
         "css": ["content-scripts/moodle_coursehome_style.css"]
     }],
