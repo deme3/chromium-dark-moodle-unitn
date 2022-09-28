@@ -8,7 +8,9 @@
     },
     "content_scripts": [{
         "matches": ["https://webapps.unitn.it/gestionecorsi/*",
-            "http://webapps.unitn.it/gestionecorsi/*"
+            "http://webapps.unitn.it/gestionecorsi/*",
+            "http://webapps.unitn.it/gestionecorsi",
+            "https://webapps.unitn.it/gestionecorsi"
         ],
         "css": ["content-scripts/webapps_entrypoint_injected_style.css"]
     }, {
@@ -46,6 +48,7 @@
             "https://didatticaonline.unitn.it/dol/mod/daddyvideo/view.php*",
             "https://didatticaonline.unitn.it/dol/user/profile.php*",
             "https://didatticaonline.unitn.it/dol/grade/report/overview/index.php*",
+            "https://didatticaonline.unitn.it/dol/grade/report/user/index.php*",
             "https://didatticaonline.unitn.it/dol/user/preferences.php*",
             "https://didatticaonline.unitn.it/dol/user/edit.php*",
             "https://didatticaonline.unitn.it/dol/user/language.php*",
@@ -79,6 +82,7 @@
             "https://didatticaonline.unitn.it/dol/mod/feedback/print.php*",
             "https://didatticaonline.unitn.it/dol/mod/choice/view.php*",
             "https://didatticaonline.unitn.it/dol/mod/folder/view.php*",
+            "https://didatticaonline.unitn.it/dol/reportbuilder/index.php*",
             "https://didatticaonline.unitn.it/ateneo/mod/forum/discuss.php?d=*",
             "https://didatticaonline.unitn.it/ateneo/message/notificationpreferences.php*",
             "https://didatticaonline.unitn.it/ateneo/",
@@ -94,6 +98,7 @@
             "https://didatticaonline.unitn.it/ateneo/mod/daddyvideo/view.php*",
             "https://didatticaonline.unitn.it/ateneo/user/profile.php*",
             "https://didatticaonline.unitn.it/ateneo/grade/report/overview/index.php*",
+            "https://didatticaonline.unitn.it/ateneo/grade/report/user/index.php*",
             "https://didatticaonline.unitn.it/ateneo/user/preferences.php*",
             "https://didatticaonline.unitn.it/ateneo/user/edit.php*",
             "https://didatticaonline.unitn.it/ateneo/user/language.php*",
@@ -126,7 +131,8 @@
             "https://didatticaonline.unitn.it/ateneo/mod/feedback/view.php*",
             "https://didatticaonline.unitn.it/ateneo/mod/feedback/print.php*",
             "https://didatticaonline.unitn.it/ateneo/mod/choice/view.php*",
-            "https://didatticaonline.unitn.it/ateneo/mod/folder/view.php*"
+            "https://didatticaonline.unitn.it/ateneo/mod/folder/view.php*",
+            "https://didatticaonline.unitn.it/ateneo/reportbuilder/index.php*"
         ],
         "css": ["content-scripts/moodle_coursehome_style.css"]
     }],

@@ -50,7 +50,9 @@ a[href^="https://didatticaonline.unitn.it/ateneo/course/view.php?id="]::after {
 .userprofile .profile_tree section,
 .groupinfobox,
 .well,
-#region-main {
+#region-main,
+#page.drawers .main-inner,
+.drawer {
     background: #212121 !important;
 }
 
@@ -147,6 +149,88 @@ html {
     color: #AAA !important;
 }
 
+.border {
+    border-color: #353535 !important;
+}
+
+.courseindex .courseindex-item .courseindex-link, .courseindex .courseindex-item .courseindex-chevron {
+    color: #fff;
+}
+
+.courseindex .courseindex-item:hover .courseindex-link, .courseindex .courseindex-item:hover .courseindex-chevron, .courseindex .courseindex-item:focus .courseindex-link, .courseindex .courseindex-item:focus .courseindex-chevron {
+    color: #bbb;
+}
+
+.moremenu .nav-link.active {
+    background-color: #b10b25 !important;
+    border-bottom-color: #4c1b19 !important;
+    color: #4c1b19 !important;
+}
+
+.secondary-navigation .navigation .nav-tabs .nav-link:hover, .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link, .moremenu .nav-link:hover, .moremenu .nav-link:focus {
+    background-color: hsl(350, 80%, 32%) !important;
+    border-bottom-color: #4c1b19 !important;
+    color: white !important;
+}
+
+.btn.btn-icon.bg-secondary.icon-no-margin.btn-footer-popover, .drawer-toggles .drawer-toggler .btn {
+    background-color: #b10b25 !important;
+    color: #4c1b19 !important;
+}
+
+.simplesearchform .collapse.show, .simplesearchform .collapsing {
+    background-color: var(--primary);
+}
+
+.message-app,
+.message-app .footer-container .border-top.bg-white.position-relative {
+    background-color: #111 !important;
+}
+
+.drawer.drawer-right .drawertoggle {
+    background-color: #353535;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    margin-right: 12px;
+}
+
+.secondary-navigation .navigation .nav-tabs .nav-link[aria-expanded="true"] { color: white !important; }
+
+.btn.btn-icon, .btn.btn-icon {
+    background: #353535;
+}
+
+.btn.btn-icon:hover, .btn.btn-icon:focus {
+    background: hsl(350, 80%, 32%);
+}
+
+.btn.btn-icon .icon {
+    transition: color 0.15s ease-in-out;
+}
+
+.btn.btn-icon:hover .icon, .btn.btn-icon:focus .icon {
+    color: hsl(350, 80%, 22%);
+}
+
+.secondary-navigation .navigation {
+    border: 1px solid #4c1b19 !important;
+    background-color: #4c1b19;
+}
+
+.activityiconcontainer, .simplesearchform .btn-submit {
+    background-color: #353535;
+    border-color: #404040;
+}
+
+.activity-item:not(.activityinline) {
+    border-color: #353535;
+}
+
+/* Box informativi */
+.description .course-description-item, .path-mod .activity-header:not(:empty) {
+    background-color: #353535;
+}
 
 /* Course section titles */
 
