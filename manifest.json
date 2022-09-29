@@ -1,6 +1,6 @@
 {
     "name": "Moodle Dark Mode for UniTN",
-    "version": "1.1.0.0",
+    "version": "1.1.0.1",
     "manifest_version": 2,
     "description": "A Chromium extension to inject dark mode into UniTN's learning management system, specifically designed for UniTN branding.",
     "icons": {
@@ -83,6 +83,8 @@
             "https://didatticaonline.unitn.it/dol/mod/choice/view.php*",
             "https://didatticaonline.unitn.it/dol/mod/folder/view.php*",
             "https://didatticaonline.unitn.it/dol/reportbuilder/index.php*",
+            "https://didatticaonline.unitn.it/dol/course/index.php*",
+            "https://didatticaonline.unitn.it/dol/mod/customcert/my_certificates.php*",
             "https://didatticaonline.unitn.it/ateneo/mod/forum/discuss.php?d=*",
             "https://didatticaonline.unitn.it/ateneo/message/notificationpreferences.php*",
             "https://didatticaonline.unitn.it/ateneo/",
@@ -132,7 +134,9 @@
             "https://didatticaonline.unitn.it/ateneo/mod/feedback/print.php*",
             "https://didatticaonline.unitn.it/ateneo/mod/choice/view.php*",
             "https://didatticaonline.unitn.it/ateneo/mod/folder/view.php*",
-            "https://didatticaonline.unitn.it/ateneo/reportbuilder/index.php*"
+            "https://didatticaonline.unitn.it/ateneo/reportbuilder/index.php*",
+            "https://didatticaonline.unitn.it/ateneo/course/index.php*",
+            "https://didatticaonline.unitn.it/ateneo/mod/customcert/my_certificates.php*"
         ],
         "css": ["content-scripts/moodle_coursehome_style.css"]
     }],

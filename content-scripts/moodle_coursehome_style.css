@@ -227,6 +227,11 @@ html {
     border-color: #353535;
 }
 
+/* User profile generic img */
+img[src*="pluginfile.php/110131/user/icon/boostunitn/f1"] {
+    filter: invert(0.9);
+}
+
 /* Box informativi */
 .description .course-description-item, .path-mod .activity-header:not(:empty) {
     background-color: #353535;
